@@ -12,9 +12,9 @@ pipeline{
             steps{
                 echo '='*50 + '开始构建' + '='*50
                 echo '---> 更新依赖包'
-                sh 'pipenv install --skip-lock'
+                //sh 'pipenv install --skip-lock'
                 echo '---> 扫描用例信息'
-                sh 'pipenv run python case_scanner.py'
+                //sh 'pipenv run python case_scanner.py'
                 echo 'build success!'
              }
         }
